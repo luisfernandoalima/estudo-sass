@@ -1,0 +1,26 @@
+// Funções
+@mixin button-style($background, $color) {
+    background: $background;
+    color: $color;
+    &:hover{
+        background-color: mix($background, blue);
+    }
+}
+
+.btn {
+    width: 200px;
+    padding: 10px 0px;
+    background: none;
+    border: 0;
+    border-radius: 10px;
+    transition: .3s;
+
+    &.btn-rosa {
+        @include button-style($cor-rosa, #000)
+    }
+}
+
+.btn-laranja {
+    @extend .btn;
+    @include button-style($cor-laranja, #fff);
+}

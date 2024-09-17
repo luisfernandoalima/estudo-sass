@@ -1,0 +1,29 @@
+.btn, .btn-laranja {
+  width: 200px;
+  padding: 10px 0px;
+  background: none;
+  border: 0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.btn.btn-rosa, .btn-rosa.btn-laranja {
+  background: pink;
+  color: #000;
+}
+.btn.btn-rosa:hover, .btn-rosa.btn-laranja:hover {
+  background-color: #8060e5;
+}
+
+.btn-laranja {
+  background: orange;
+  color: #fff;
+}
+.btn-laranja:hover {
+  background-color: #805380;
+}
+
+p {
+  color: pink;
+}
+
+/*# sourceMappingURL=style.css.map */
